@@ -1,0 +1,83 @@
+.mlops-stack-interactive-chart {
+  --black: #020408;
+  background: #ecf5f7;
+  font-family: 'Montserrat', arial, sans-serif;
+}
+
+.mlops-stack-interactive-chart .container {
+  padding: 20px;
+  max-width: 1200px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.mlops-stack-interactive-chart .mlops-nav {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  overflow-x: scroll;
+  border-bottom: 1px solid #bac7ca;
+  padding: 60px 0 30px;
+  font-weight: bold;
+}
+.mlops-stack-interactive-chart .mlops-nav::after {
+  content: "";
+  display: block;
+  position: sticky;
+  right: -1px;
+  top: 0;
+  height: 54px;
+  min-width: 61px;
+  background: linear-gradient(to right, #ecf5f700, #ecf5f7);
+  pointer-events: none;
+}
+
+.mlops-stack-interactive-chart .option {
+  display: inline-block;
+  padding: 10px;
+  margin: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+.mlops-stack-interactive-chart .option:last-child {
+  padding-right: 60px;
+}
+.mlops-stack-interactive-chart .option .check {
+  display: inline-block;
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  border-radius: 9px;
+  border: 2px solid var(--black, #000);
+  background: var(--white, #fff);
+  margin-right: 10px;
+  pointer-events: none;
+}
+.mlops-stack-interactive-chart .option.active {
+  color: var(--black, #000);
+}
+.mlops-stack-interactive-chart .option.active .check {
+  background: currentColor;
+  display: grid;
+  place-content: center;
+}
+.mlops-stack-interactive-chart .option.active .check::before {
+  content: "";
+  color: var(--black, #000);
+  position: relative;
+  height: 6px;
+  width: 12px;
+  transform: rotate(-45deg);
+  transform-origin: 5px 2px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.mlops-stack-interactive-chart .mlops-wrapper {
+  padding: 20px;
+}

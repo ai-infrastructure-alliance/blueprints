@@ -1,0 +1,383 @@
+<section class="mlops-stack-interactive-chart">
+  <div class="container">
+    <nav class="mlops-nav">
+      <!-- add desired fill color in `data-color` and company-name in `data-attr` -->
+      <div class="option" data-color="#FE9B7C" data-attr="pachyderm">
+        <span class="check"></span>
+        Pachyderm
+      </div>
+      <div class="option" data-color="#8DE7BD" data-attr="clear-ml">
+        <span class="check"></span>
+        Clear ML
+      </div>
+      <div class="option" data-color="#D8D4A7" data-attr="seldon">
+        <span class="check"></span>
+        Seldon
+      </div>
+      <div class="option" data-color="#EE7676" data-attr="tecton">
+        <span class="check"></span>
+        Tecton
+      </div>
+      <div class="option" data-color="#DB9FCA" data-attr="arize">
+        <span class="check"></span>
+        Arize
+      </div>
+      <div class="option" data-color="#BCE8F0" data-attr="fiddler">
+        <span class="check"></span>
+        Fiddler
+      </div>
+    </nav>
+    <div class="mlops-wrapper mlops-stack__image">
+      <svg viewBox="0 0 1530 890" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+
+          <!-- add class `paint-[company-name]` to all relevant linearGradients -->
+          <!-- NOTEBOOKS -->
+          <linearGradient id="paint-notebooks" class="paint paint-pachyderm paint-clear-ml paint-comet" x1="550" y1="30"
+            x2="760" y2="30" gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- DASHBOARDS -->
+          <linearGradient id="paint-dashboards" class="paint paint-arize paint-clear-ml paint-comet paint-seldon"
+            x1="780" y1="30" x2="1090" y2="30" gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- CODE REPO -->
+          <linearGradient id="paint-code-repo" class="paint" x1="150" y1="120" x2="380" y2="120"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- DATA SCIENCE EXPERIMENTATION PIPELINE -->
+          <linearGradient id="paint-datasci-pipeline" class="paint paint-clear-ml paint-comet paint-seldon" x1="400"
+            y1="120" x2="1380" y2="120" gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- RBAC -->
+          <linearGradient id="paint-rbac" class="paint" x1="0" y1="245" x2="130" y2="245"
+            gradientUnits="userSpaceOnUse">
+          </linearGradient>
+
+          <!-- DATA ENGINEERING ORCHESTRATION PIPELINE -->
+          <linearGradient id="paint-dataeng-pipeline" class="paint paint-pachyderm" x1="150" y1="220" x2="1130" y2="220"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- EXTERNAL DATA SOURCES -->
+          <linearGradient id="paint-external-data" class="paint" x1="0" y1="390" x2="130" y2="390"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- LABELING -->
+          <linearGradient id="paint-labeling" class="paint" x1="165" y1="460" x2="365" y2="460"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- DATA ENGINEERINGENGINE -->
+          <linearGradient id="paint-data-eng" class="paint paint-pachyderm" x1="150" y1="370" x2="380" y2="370"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- EXPERIMENTATIONENGINE -->
+          <linearGradient id="paint-experimentation" class="paint paint-pachyderm paint-clear-ml paint-comet" x1="400"
+            y1="370" x2="630" y2="370" gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <!-- MODEL TESTING /VALIDATION ENGINE -->
+          <linearGradient id="paint-model-testing" class="paint paint-comet paint-arize" x1="665" y1="460" x2="865"
+            y2="460" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- TRAINING ENGINE -->
+          <linearGradient id="paint-training" class="paint paint-pachyderm paint-clear-ml paint-comet" x1="650" y1="370"
+            x2="880" y2="370" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- MODEL REPO -->
+          <linearGradient id="paint-model-repo" class="paint paint-comet paint-seldon paint-algorithmia" x1="915"
+            y1="460" x2="1115" y2="460" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- DEPLOYMENT ENGINE -->
+          <linearGradient id="paint-deployment" class="paint paint-algorithmia paint-comet paint-seldon" x1="900"
+            y1="370" x2="1130" y2="370" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- SERVING ENGINE -->
+          <linearGradient id="paint-serving" class="paint paint-seldon paint-algorithmia" x1="1150" y1="370" x2="1380"
+            y2="370" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- MODEL SECURITY ALERTING ENGINE -->
+          <linearGradient id="paint-msae" class="paint" x1="1400" y1="245" x2="1530" y2="245"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- LOGGING ENGINE -->
+          <linearGradient id="paint-logging" class="paint paint-comet paint-fiddler paint-arize paint-seldon" x1="1400"
+            y1="395" x2="1530" y2="395" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- MONITORING -->
+          <linearGradient id="paint-monitoring"
+            class="paint paint-seldon paint-comet paint-fiddler paint-arize paint-seldon" x1="400" y1="550" x2="1380"
+            y2="550" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- METADATA STORE -->
+          <linearGradient id="paint-metadata-store" class="paint paint-pachyderm paint-clear-ml paint-comet paint-arize"
+            x1="590" y1="680" x2="1190" y2="680" gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- FEATURE STORE -->
+          <linearGradient id="paint-feature-store" class="paint paint-tecton" x1="165" y1="655" x2="625" y2="655"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- DATA FOUNDATION -->
+          <linearGradient id="paint-data-foundation" class="paint paint-pachyderm" x1="150" y1="735" x2="1380" y2="735"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          
+          <!-- CLOUD OR ON-PREM INFRASTRUCTURE -->
+          <linearGradient id="paint-cloud" class="paint" x1="150" y1="845" x2="1380" y2="845"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+        </defs>
+
+        <!-- Do not modify -->
+        <g id="white-background-fills">
+          <rect class="box" x="1" y="471" width="128" height="138" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="151" y="801" width="1228" height="88" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="151" y="691" width="1228" height="88" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="166" y="611" width="458" height="88" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="166" y="611" width="458" height="88" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="591" y="651" width="598" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="401" y="511" width="978" height="78" rx="9" fill="var(--white, #fff)" />
+          <circle class="box" cx="1465" cy="395" r="64" fill="var(--white, #fff)" />
+          <circle class="box" cx="1465" cy="245" r="64" fill="var(--white, #fff)" />
+          <rect class="box" x="1151" y="281" width="228" height="178" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="901" y="281" width="228" height="178" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="916" y="431" width="198" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="651" y="281" width="228" height="178" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="666" y="431" width="198" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="401" y="281" width="228" height="178" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="151" y="281" width="228" height="178" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="166" y="431" width="198" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="1" y="331" width="128" height="118" rx="9" fill="#d7d7d7" />
+          <rect class="box" x="151" y="181" width="978" height="78" rx="9" fill="var(--white, #fff)" />
+          <circle class="box" cx="65" cy="245" r="64" fill="var(--white, #fff)" />
+          <rect class="box" x="401" y="81" width="978" height="78" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="151" y="81" width="228" height="78" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="781" y="1" width="308" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box" x="551" y="1" width="208" height="58" rx="9" fill="var(--white, #fff)" />
+        </g>
+        <g id="Stack-Dev">
+          <!-- <rect id="background-rect" width="1530" height="890" fill="white" /> -->
+          <rect id="synthetic-data" x="1" y="471" width="128" height="138" rx="9" stroke="var(--black, #000)"
+            stroke-width="2" />
+          <rect class="box box-cloud" x="151" y="801" width="1228" height="88" rx="9" fill="url(#paint-cloud)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-data-foundation" x="151" y="691" width="1228" height="88" rx="9"
+            fill="url(#paint-data-foundation)" stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-feature-store-bg" x="166" y="611" width="458" height="88" rx="9" fill="var(--white, #fff)" />
+          <rect class="box box-feature-store" x="166" y="611" width="458" height="88" rx="9"
+            fill="url(#paint-feature-store)" stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-metadata-store" x="591" y="651" width="598" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box box-metadata-store" x="591" y="651" width="598" height="58" rx="9"
+            fill="url(#paint-metadata-store)" stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-monitoring" x="401" y="511" width="978" height="78" rx="9" fill="url(#paint-monitoring)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <circle class="box box-logging" cx="1465" cy="395" r="64" fill="url(#paint-logging)" stroke="var(--black, #000)"
+            stroke-width="2" />
+          <circle class="box box-msae" cx="1465" cy="245" r="64" fill="url(#paint-msae)" stroke="var(--black, #000)"
+            stroke-width="2" />
+          <rect class="box box-serving" x="1151" y="281" width="228" height="178" rx="9" fill="url(#paint-serving)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-deployment" x="901" y="281" width="228" height="178" rx="9" fill="url(#paint-deployment)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-model-repo-bg" x="916" y="431" width="198" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box box-model-repo" x="916" y="431" width="198" height="58" rx="9" fill="url(#paint-model-repo)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-training" x="651" y="281" width="228" height="178" rx="9" fill="url(#paint-training)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-model-testing-bg" x="666" y="431" width="198" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box box-model-testing" x="666" y="431" width="198" height="58" rx="9"
+            fill="url(#paint-model-testing)" stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-experimentation" x="401" y="281" width="228" height="178" rx="9"
+            fill="url(#paint-experimentation)" stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-data-eng" x="151" y="281" width="228" height="178" rx="9" fill="url(#paint-data-eng)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-labeling-bg" x="166" y="431" width="198" height="58" rx="9" fill="var(--white, #fff)" />
+          <rect class="box box-labeling" x="166" y="431" width="198" height="58" rx="9" fill="url(#paint-labeling)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-external-data" x="1" y="331" width="128" height="118" rx="9"
+            fill="url(#paint-external-data)" stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-dataeng-pipeline" x="151" y="181" width="978" height="78" rx="9"
+            fill="url(#paint-dataeng-pipeline)" stroke="var(--black, #000)" stroke-width="2" />
+          <circle class="box box-rbac" cx="65" cy="245" r="64" fill="url(#paint-rbac)" stroke="var(--black, #000)"
+            stroke-width="2" />
+          <rect class="box box-datasci-pipeline" x="401" y="81" width="978" height="78" rx="9"
+            fill="url(#paint-datasci-pipeline)" stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-code-repo" x="151" y="81" width="228" height="78" rx="9" fill="url(#paint-code-repo)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-dashboards" x="781" y="1" width="308" height="58" rx="9" fill="url(#paint-dashboards)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <rect class="box box-notebooks" x="551" y="1" width="208" height="58" rx="9" fill="url(#paint-notebooks)"
+            stroke="var(--black, #000)" stroke-width="2" />
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="595.285" y="36.453">NOTEBOOKS</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="207.623" y="113.453">CODE REPO</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="414.367" y="213.453">DATA ENGINEERING ORCHESTRATION PIPELINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="170.061" y="337.453">DATA ENGINEERING</tspan>
+            <tspan x="228.49" y="359.453">ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="15.0605" y="371.453">EXTERNAL</tspan>
+            <tspan x="38.9404" y="393.453">DATA</tspan>
+            <tspan x="19.5781" y="415.453">SOURCES</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="12.1162" y="501.453">SYNTHETIC</tspan>
+            <tspan x="38.9404" y="523.453">DATA</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-weight="bold" letter-spacing="0em">
+            <tspan x="227.251" y="465.519">LABELING</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-weight="bold" letter-spacing="0em">
+            <tspan x="700.401" y="456.519">MODEL TESTING /</tspan>
+            <tspan x="689.272" y="473.519">VALIDATION ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-weight="bold" letter-spacing="0em">
+            <tspan x="966.345" y="465.519">MODEL REPO</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="423.585" y="337.453">EXPERIMENTATION</tspan>
+            <tspan x="478.49" y="359.453">ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="718.206" y="337.453">TRAINING</tspan>
+            <tspan x="728.155" y="359.453">ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="826.736" y="543.453">MONITORING</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="317.507" y="642.453">FEATURE STORE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="803.243" y="686.453">METADATA STORE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="671.449" y="731.453">DATA FOUNDATION</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="576.853" y="833.453">CLOUD OR ON-PREM INFRASTRUCTURE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="948.889" y="337.453">DEPLOYMENT</tspan>
+            <tspan x="978.49" y="359.453">ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="1429.91" y="218.453">MODEL</tspan>
+            <tspan x="1418.5" y="240.453">SECURITY</tspan>
+            <tspan x="1417.38" y="262.453">ALERTING</tspan>
+            <tspan x="1428.49" y="284.453">ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="1421.03" y="390.453">LOGGING</tspan>
+            <tspan x="1428.49" y="412.453">ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="1222.62" y="337.453">SERVING</tspan>
+            <tspan x="1228.25" y="359.453">ENGINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="680.45" y="113.453">DATA SCIENCE EXPERIMENTATION PIPELINE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="798.023" y="133.519">EXPERIMENT TO SERVING</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="220.39" y="133.519">SUCH AS GIT</tspan>
+          </text>
+          <g>
+            <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+              font-size="18" font-weight="bold" letter-spacing="0em">
+              <tspan x="38.0967" y="222.453">RBAC</tspan>
+            </text>
+            <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+              font-size="14" font-style="italic" letter-spacing="0em">
+              <tspan x="18.4023" y="248.519">ROLE BASED</tspan>
+              <tspan x="36.832" y="265.519">ACCESS</tspan>
+              <tspan x="29.4697" y="282.519">CONTROL</tspan>
+            </text>
+          </g>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="14.6533" y="543.519">GENERATION/</tspan>
+            <tspan x="5.82129" y="560.519">AUGMENTATION</tspan>
+            <tspan x="29.7197" y="577.519">USE CASE</tspan>
+            <tspan x="19.0215" y="594.519">DEPENDENT</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="521.142" y="236.519">INGESTION TO DEPLOYMENT</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="798.023" y="566.519">EXPERIMENT TO SERVING</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="185.724" y="390.519">DATA INGESTION AND</tspan>
+            <tspan x="171.56" y="407.519">TRANSFORMATION STAGE</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="310.439" y="664.519">USE CASE DEPENDENT</tspan>
+            <tspan x="267.42" y="681.519">PRIMARILY FOR STRUCTURED DATA</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="583.602" y="749.519">VERSIONING DATA LAKE WITH LINEAGE TRACKING</tspan>
+            <tspan x="679.619" y="766.519">INGESTION TO SERVING</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="590.581" y="853.519">(SUCH AS KUBERNETES/IAAS/OBJECT STORE/OS)</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="445.506" y="390.519">EXPERIMENTS AND</tspan>
+            <tspan x="484.819" y="407.519">TESTING</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="681.335" y="390.519">TRAINING AND TUNING</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="922.079" y="390.519">DEPLOY TO PRODUCTION</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="14" font-style="italic" letter-spacing="0em">
+            <tspan x="1192.24" y="390.519">MAKE PREDICTIONS</tspan>
+            <tspan x="1236.06" y="407.519">IN APPS</tspan>
+          </text>
+          <text fill="var(--black, #000)" xml:space="preserve" style="white-space: pre" font-family="Montserrat"
+            font-size="18" font-weight="bold" letter-spacing="0em">
+            <tspan x="858" y="36.453">DASHBOARDS</tspan>
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
