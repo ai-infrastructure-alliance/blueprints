@@ -7,6 +7,11 @@ Add company to `<nav class="mlops-nav"></nav>` as:
 ```
 <div class="option" data-color="#FE9B7C" data-attr="company-name">
   <span class="check"></span>
+  <!-- optional logo -->
+  <div class="logo">
+    <img src="assets/logos/ai-infrastructure.svg" alt="sample logo" />
+  </div>
+  <!-- end optional logo -->
   Company Name
 </div>
 ```
@@ -15,3 +20,5 @@ Add company to `<nav class="mlops-nav"></nav>` as:
 
 Then add the class `paint-company-name` to all relevant `linearGradient` elements. 
 This determines which boxes get filled.
+
+To preset active company add `active` to nav option's class list: `<div class="option active" data-color="#FE9B7C" data-attr="company-name">`

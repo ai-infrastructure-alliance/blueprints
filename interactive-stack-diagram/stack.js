@@ -54,6 +54,12 @@ if (mlopsChart) {
     var check = selector.querySelector(".check");
     check.style.color = color;
     var target = "paint-".concat(selector.dataset.attr);
+
+    // set initial active states
+    if (selector.classList.contains("active")) {
+      paint(target, color, true);
+    }
+
     selector.addEventListener("click", function () {
       var add = true;
 
