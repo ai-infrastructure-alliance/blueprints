@@ -1,5 +1,6 @@
 .mlops-stack-interactive-chart {
   --black: #020408;
+  --nav-margin: 10px;
   background: #ecf5f7;
   font-family: 'Montserrat', arial, sans-serif;
 }
@@ -22,6 +23,7 @@
   padding: 60px 0 30px;
   font-weight: bold;
 }
+
 .mlops-stack-interactive-chart .mlops-nav::after {
   content: "";
   display: block;
@@ -36,7 +38,7 @@
 
 .mlops-stack-interactive-chart .option {
   display: inline-block;
-  padding: 10px;
+  padding: var(--nav-margin);
   margin: 4px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -45,9 +47,11 @@
   align-items: center;
   white-space: nowrap;
 }
+
 .mlops-stack-interactive-chart .option:last-child {
   padding-right: 60px;
 }
+
 .mlops-stack-interactive-chart .option .check {
   display: inline-block;
   width: 1.8rem;
@@ -55,9 +59,35 @@
   border-radius: 9px;
   border: 2px solid var(--black, #000);
   background: var(--white, #fff);
-  margin-right: 10px;
+  margin-right: var(--nav-margin);
   pointer-events: none;
 }
+
+@media screen and (max-width: 899px) {
+  .mlops-stack-interactive-chart {
+    --nav-margin: 8px;
+    font-size: 14px;
+  }
+
+  .mlops-stack-interactive-chart .option .check {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 7px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .mlops-stack-interactive-chart {
+    --nav-margin: 6px;
+    font-size: 12px;
+  }
+
+  .mlops-stack-interactive-chart .option .check {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
 .mlops-stack-interactive-chart .option.active {
   color: var(--black, #000);
 }
@@ -80,7 +110,7 @@
 .mlops-stack-interactive-chart .option .logo {
   width: 3.8rem;
   height: 2rem;
-  margin-right: 10px;
+  margin-right: var(--nav-margin);
   position: relative;
 }
 
