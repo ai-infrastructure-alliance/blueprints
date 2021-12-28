@@ -4,5 +4,7 @@ This repo contains the blueprint diagrams from the AI Infrastructure Alliance.  
 
 The easiest way to update the files is via the Figma versions of the files, located in the [Figma Files directory](https://github.com/ai-infrastructure-alliance/blueprints/tree/main/figma-files)
 
+To take a look at the interactive version of the blueprint, you can check out the [preview](https://ai-infrastructure-alliance.github.io/blueprints/interactive-stack-diagram/stack.html).
+
 Please retain the AIIA Logo on the diagrams when you use them, otherwise you are free to modify them in any way you see fit.
 
