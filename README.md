@@ -6,5 +6,7 @@ The easiest way to update the files is via the Figma versions of the files, loca
 
 To take a look at the interactive version of the blueprint, you can check out the [preview](https://ai-infrastructure-alliance.github.io/blueprints/interactive-stack-diagram/stack.html).
 
+Lastly, you can see individual companies and how they fit into the stack with color coding [right here](https://github.com/ai-infrastructure-alliance/blueprints/tree/main/individual-company-and-project-diagrams).
+
 Please retain the AIIA Logo on the diagrams when you use them, otherwise you are free to modify them in any way you see fit.
 
