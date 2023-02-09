@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>The Machine Learning Tech Stack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stack.css">
+</head>
+
+<body>
+  <section>
+    <div>
+      <!-- For Options data-color is chart color, and data-attr drives naming  -->
+      <nav>
+        <div class="option active" data-color="#8DE7BD" data-attr="company-one">
+          <span class="check"></span>
+          <span class="logo"><img src="https://assets.codepen.io/107420/GHOUL-LAZARI-4.svg" /></span>
+          Company One
+        </div>
+        <div class="option" data-color="#ea7369" data-attr="company-two">
+          <span class="check"></span>
+          <span class="logo"><svg viewBox="0 0 512 512" title="chess-queen">
+            <path
+                d="M256 112a56 56 0 1 0-56-56 56 56 0 0 0 56 56zm176 336H80a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h352a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm72.87-263.84l-28.51-15.92c-7.44-5-16.91-2.46-22.29 4.68a47.59 47.59 0 0 1-47.23 18.23C383.7 186.86 368 164.93 368 141.4a13.4 13.4 0 0 0-13.4-13.4h-38.77c-6 0-11.61 4-12.86 9.91a48 48 0 0 1-93.94 0c-1.25-5.92-6.82-9.91-12.86-9.91H157.4a13.4 13.4 0 0 0-13.4 13.4c0 25.69-19 48.75-44.67 50.49a47.5 47.5 0 0 1-41.54-19.15c-5.28-7.09-14.73-9.45-22.09-4.54l-28.57 16a16 16 0 0 0-5.44 20.47L104.24 416h303.52l102.55-211.37a16 16 0 0 0-5.44-20.47z" />
+            </svg>
+          </span>
+          Company Two
+        </div>
+      </nav>
+
+      <svg class="aiia-chart" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="paint-labeling" class="paint paint-company-one paint-company-two" x1="386" y1="0"
+            x2="784.906" y2="0" gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-notebook" class="paint paint-company-one" x1="797.23" y1="0" x2="1196.136" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-dashboard" class="paint paint-company-two" x1="1208.09" y1="0" x2="1607" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <linearGradient id="paint-experiment" class="paint" x1="386" y1="0" x2="998" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-observe" class="paint paint-company-one paint-company-two" x1="1010" y1="0"
+            x2="1607" y2="0" gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <linearGradient id="paint-engineering" class="paint" x1="386" y1="0" x2="643.64" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-dataset" class="paint" x1="654" y1="0" x2="883.57" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-training" class="paint" x1="895.248" y1="0" x2="1123.817" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-evaluation" class="paint" x1="1376.43" y1="0" x2="1607" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-deployment" class="paint" x1="1135.83" y1="0" x2="1364.4" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <linearGradient id="paint-orchestration" class="paint" x1="386" y1="0" x2="1607" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <linearGradient id="paint-feature" class="paint" x1="386" y1="0" x2="784.906" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-model" class="paint" x1="797.23" y1="0" x2="1196.136" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+          <linearGradient id="paint-metadata" class="paint" x1="1208.09" y1="0" x2="1607" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <linearGradient id="paint-datalake" class="paint" x1="386" y1="0" x2="1607" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+          <linearGradient id="paint-cloud" class="paint paint-company-one" x1="386" y1="0" x2="1607" y2="0"
+            gradientUnits="userSpaceOnUse"></linearGradient>
+
+        </defs>
+        <rect x="31" y="21" width="1858" height="1038" rx="19" stroke="black" stroke-width="2" />
+        <rect x="359" y="56" width="1269" height="158" rx="9" stroke="black" stroke-width="2" />
+        <rect x="359" y="318" width="1269" height="220" rx="9" stroke="black" stroke-width="2" />
+        <rect x="359" y="640" width="1269" height="232" rx="9" stroke="black" stroke-width="2" />
+
+        <rect fill="url(#paint-labeling)" x="386" y="139" width="398.906" height="60" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-notebook)" x="797.23" y="139" width="398.906" height="60" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-dashboard)" x="1208.09" y="139" width="398.906" height="60" rx="9" stroke="black"
+          stroke-width="2" />
+
+        <rect fill="url(#paint-experiment)" x="386" y="236" width="612" height="60" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-observe)" x="1010" y="236" width="597" height="60" rx="9" stroke="black"
+          stroke-width="2" />
+
+        <rect fill="url(#paint-engineering)" x="386" y="402" width="257.64" height="117" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-dataset)" x="654" y="402" width="229.57" height="117" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-training)" x="895.248" y="402" width="228.569" height="117" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-evaluation)" x="1135.83" y="402" width="228.569" height="117" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-deployment)" x="1376.43" y="402" width="230.574" height="117" rx="9" stroke="black"
+          stroke-width="2" />
+
+        <rect fill="url(#paint-orchestration)" x="386" y="560" width="1221" height="58" rx="9" stroke="black"
+          stroke-width="2" />
+
+        <rect fill="url(#paint-feature)" x="386" y="729" width="398.906" height="43" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-model)" x="797.23" y="729" width="398.906" height="43" rx="9" stroke="black"
+          stroke-width="2" />
+        <rect fill="url(#paint-metadata)" x="1208.09" y="729" width="398.906" height="43" rx="9" stroke="black"
+          stroke-width="2" />
+
+        <rect fill="url(#paint-datalake)" x="386" y="791" width="1221" height="65" rx="9" stroke="black"
+          stroke-width="2" />
+
+        <rect fill="url(#paint-cloud)" x="386" y="894" width="1221" height="66" rx="9" stroke="black"
+          stroke-width="2" />
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="20"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="138.605" y="139.17">USER INTERFACE</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="26"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="843.4" y="105.321">HUMAN FOUNDATION</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="533.206" y="166.453">LABELING*</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="431.721" y="186.519">HUMAN IN THE LOOP ERROR CORRECTION</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="947.893" y="175.453">NOTEBOOK</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="1351.42" y="175.453">DASHBOARD</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="578.261" y="272.453">EXPERIMENT TRACKING</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="1230.12" y="264.453">OBSERVABILITY</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="1152.19" y="284.519">MONITORING, DRIFT DETECTION, ALERTING&#10;</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="20"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="210.676" y="433.17">COMPUTE</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="26"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="843.32" y="365.321">MODEL FOUNDATION</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="419.061" y="431.453">DATA ENGINEERING</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="410.946" y="464.519">INGESTION AND VALIDATION, </tspan>
+          <tspan x="421.508" y="481.519">TRANSFORMATION STAGE,&#10;</tspan>
+          <tspan x="427.633" y="498.519">FEATURE ENGINEERING*</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="674.281" y="431.453">DATASET CREATION</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="708.838" y="464.519">AUGMENTATION,&#10;</tspan>
+          <tspan x="705.276" y="481.519">SYNTHETIC DATA*,&#10;</tspan>
+          <tspan x="721.56" y="498.519">SIMULATION*</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="962.541" y="431.453">TRAINING</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="970.493" y="464.519">TRAINING, &#10;</tspan>
+          <tspan x="960.314" y="481.519">FINE TUNING,&#10;</tspan>
+          <tspan x="930.612" y="498.519">PARAMETER SEARCH &#10;</tspan>
+          <tspan x="1009" y="515.519"> </tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="1188.52" y="431.453">EVALUATION</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="1204.95" y="464.519">VALIDATION,&#10;</tspan>
+          <tspan x="1191.25" y="481.519">EXPLAINABILITY,&#10;</tspan>
+          <tspan x="1180.14" y="498.519">SAFETY &#38; SECURITY&#x2028;</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="1425.39" y="431.453">DEPLOYMENT</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="1438.87" y="462.519">COMPILATION,&#10;</tspan>
+          <tspan x="1412.57" y="479.519">EDGE DEPLOYMENT*, &#10;</tspan>
+          <tspan x="1447.88" y="496.519">INFERENCE,&#10;</tspan>
+          <tspan x="1491.5" y="513.519">&#10;</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="864.349" y="584.453">ORCHESTRATION PIPELINE</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="743.61" y="605.519">DATA ENGINEERING, EXPERIMENTATION AND PRODUCTION PIPELINES</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="20"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="260.246" y="743.17">DATA</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="26"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="859.371" y="686.321">DATA FOUNDATION</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="945.854" y="718.519">ML ARTIFACTS</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="504.104" y="757.453">FEATURE STORE*</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="928.479" y="757.453">MODEL STORE</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="1320.74" y="757.453">METADATA STORE</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="869.267" y="821.453">DATA LAKE &#38; WAREHOUSE</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="681.927" y="839.519">STRUCTURED AND UNSTRUCTURED, VERSIONING &#38; LINEAGE TRACKING, QUERY ENGINE
+          </tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="20"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="128.605" y="934.17">INFRASTRUCTURE</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="18"
+          font-weight="bold" letter-spacing="0em">
+          <tspan x="809.353" y="923.453">CLOUD OR ON-PREM INFRASTRUCTURE</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="800.604" y="942.519">(SUCH AS KUBERNETES/IAAS/OBJECT STORE/OS/GPUS)</tspan>
+        </text>
+
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="20"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="820.229" y="999.255">INGESTION &#x2192; DEPLOYMENT LOOP</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="851.25" y="1046.74">* OPTIONAL: USE CASE DEPENDANT</tspan>
+        </text>
+
+        <path opacity="0.7" d="M360 781L1629 781" stroke="#ADADAD" stroke-width="2" stroke-dasharray="4 4" />
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14"
+          font-style="italic" letter-spacing="0em">
+          <tspan x="1614.74" y="1036.52">HTTPS://AI-INFRASTRUCTURE.ORG</tspan>
+        </text>
+        <g>
+          <path
+            d="M1626.85 1013.82L1627.83 1011.04H1632.75L1633.73 1013.82H1637.25L1632.05 1000H1628.69L1623.49 1013.82H1626.85ZM1632.01 1008.52H1628.57L1630.29 1003.56L1632.01 1008.52ZM1641.67 1013.82V1000.02H1638.43V1013.82H1641.67ZM1651.37 1013.82V1000.02H1648.13V1013.82H1651.37ZM1656.89 1013.82V1008.94C1656.89 1007.52 1657.27 1006.4 1658.65 1006.4C1659.97 1006.4 1660.17 1007.38 1660.17 1008.68V1013.82H1663.37V1008C1663.37 1005.62 1662.63 1003.78 1659.77 1003.78C1658.35 1003.78 1657.45 1004.5 1656.91 1005.38H1656.87L1656.89 1003.96H1653.69V1013.82H1656.89ZM1669.07 1013.82V1006.4H1671.19V1003.98H1669.07V1003.34C1669.07 1002.6 1669.31 1002.06 1670.25 1002.06C1670.81 1002.06 1671.43 1002.24 1671.43 1002.24L1671.59 1000.02C1671.59 1000.02 1670.67 999.76 1669.41 999.76C1668.17 999.76 1667.23 1000.16 1666.65 1000.78C1666.07 1001.38 1665.85 1002.34 1665.85 1003.44V1003.98H1664.59V1006.4H1665.85V1013.82H1669.07ZM1675.11 1013.82V1009.44C1675.11 1008.34 1675.37 1007.7 1675.61 1007.38C1675.85 1007.06 1676.37 1006.66 1677.09 1006.66C1677.65 1006.66 1678.07 1006.8 1678.25 1006.9H1678.39L1678.57 1003.96C1678.57 1003.96 1678.23 1003.78 1677.57 1003.78C1676.51 1003.78 1675.69 1004.28 1675.13 1005.36H1675.09L1675.11 1003.96H1671.91V1013.82H1675.11ZM1682.55 1014.04C1683.98 1014.04 1684.77 1013.37 1685.22 1012.93L1685.37 1012.78L1685.43 1013.82H1688.49V1008.26C1688.49 1006.6 1688.07 1005.64 1687.31 1004.92C1686.53 1004.2 1685.47 1003.78 1683.63 1003.78C1681.79 1003.78 1680.25 1004.36 1679.41 1004.78L1680.25 1006.86C1680.75 1006.54 1682.01 1005.98 1683.27 1005.98C1684.55 1005.98 1685.29 1006.52 1685.29 1007.56V1007.78L1682.81 1007.88C1680.99 1007.96 1678.97 1008.7 1678.97 1010.9C1678.97 1013.1 1680.81 1014.04 1682.55 1014.04ZM1683.67 1012C1682.79 1012 1682.17 1011.54 1682.17 1010.78C1682.17 1010.04 1682.75 1009.62 1683.73 1009.58L1685.31 1009.48V1011.1C1685.11 1011.44 1684.53 1012 1683.67 1012ZM1693.81 1014.04C1695.13 1014.04 1696.11 1013.74 1696.83 1013.18C1697.55 1012.6 1697.99 1011.8 1697.99 1010.78C1697.99 1009.74 1697.51 1009.1 1697.19 1008.78C1696.85 1008.46 1696.35 1008.2 1695.91 1008.04C1695.49 1007.88 1695.19 1007.78 1694.51 1007.58C1693.83 1007.38 1693.07 1007.14 1693.07 1006.62C1693.07 1006.1 1693.49 1005.9 1694.25 1005.9C1695.05 1005.9 1696.17 1006.42 1696.73 1006.86L1697.77 1004.98C1697.21 1004.52 1696.05 1003.76 1693.99 1003.76C1691.93 1003.76 1690.25 1004.94 1690.25 1006.86C1690.25 1008.62 1691.47 1009.24 1691.93 1009.44C1692.39 1009.64 1692.95 1009.8 1693.33 1009.9C1693.69 1010.02 1695.13 1010.34 1695.13 1010.98C1695.13 1011.62 1694.57 1011.82 1693.77 1011.82C1692.97 1011.82 1691.65 1011.3 1690.85 1010.62L1689.65 1012.52C1690.77 1013.58 1692.33 1014.04 1693.81 1014.04ZM1703.07 1014.04C1704.23 1014.04 1705.11 1013.78 1705.35 1013.72L1705.19 1011.22C1705.19 1011.22 1704.73 1011.4 1704.23 1011.4C1703.81 1011.4 1703.61 1011.32 1703.47 1011.16C1703.31 1010.98 1703.19 1010.78 1703.19 1009.94V1006.4H1705.37V1003.98H1703.19V1001.3H1699.97V1003.98H1698.57V1006.4H1699.97V1010.22C1699.97 1011.72 1700.17 1012.54 1700.67 1013.12C1701.17 1013.7 1701.93 1014.04 1703.07 1014.04ZM1709.85 1013.82V1009.44C1709.85 1008.34 1710.11 1007.7 1710.35 1007.38C1710.59 1007.06 1711.11 1006.66 1711.83 1006.66C1712.39 1006.66 1712.81 1006.8 1712.99 1006.9H1713.13L1713.31 1003.96C1713.31 1003.96 1712.97 1003.78 1712.31 1003.78C1711.25 1003.78 1710.43 1004.28 1709.87 1005.36H1709.83L1709.85 1003.96H1706.65V1013.82H1709.85ZM1717.87 1014.04C1719.29 1014.04 1720.33 1013.3 1720.75 1012.7L1720.77 1013.82H1723.85V1003.96H1720.65V1009.2C1720.65 1010.5 1720.13 1011.4 1718.99 1011.4C1717.85 1011.4 1717.53 1010.62 1717.53 1009.48V1003.96H1714.33V1009.92C1714.33 1011.34 1714.57 1012.2 1715.05 1012.88C1715.55 1013.54 1716.45 1014.04 1717.87 1014.04ZM1730.59 1014.04C1733.21 1014.04 1734.25 1012.94 1734.35 1012.86L1733.59 1010.44C1733.59 1010.44 1732.59 1011.4 1731.09 1011.4C1729.59 1011.4 1728.61 1010.42 1728.61 1008.86C1728.61 1007.3 1729.69 1006.36 1731.05 1006.36C1732.43 1006.36 1733.31 1007.02 1733.59 1007.24L1734.29 1004.82C1734.29 1004.82 1733.15 1003.78 1730.63 1003.78C1727.93 1003.78 1725.39 1005.62 1725.39 1008.92C1725.39 1012.2 1727.89 1014.04 1730.59 1014.04ZM1739.19 1014.04C1740.35 1014.04 1741.23 1013.78 1741.47 1013.72L1741.31 1011.22C1741.31 1011.22 1740.85 1011.4 1740.35 1011.4C1739.93 1011.4 1739.73 1011.32 1739.59 1011.16C1739.43 1010.98 1739.31 1010.78 1739.31 1009.94V1006.4H1741.49V1003.98H1739.31V1001.3H1736.09V1003.98H1734.69V1006.4H1736.09V1010.22C1736.09 1011.72 1736.29 1012.54 1736.79 1013.12C1737.29 1013.7 1738.05 1014.04 1739.19 1014.04ZM1746.25 1014.04C1747.67 1014.04 1748.71 1013.3 1749.13 1012.7L1749.15 1013.82H1752.23V1003.96H1749.03V1009.2C1749.03 1010.5 1748.51 1011.4 1747.37 1011.4C1746.23 1011.4 1745.91 1010.62 1745.91 1009.48V1003.96H1742.71V1009.92C1742.71 1011.34 1742.95 1012.2 1743.43 1012.88C1743.93 1013.54 1744.83 1014.04 1746.25 1014.04ZM1757.55 1013.82V1009.44C1757.55 1008.34 1757.81 1007.7 1758.05 1007.38C1758.29 1007.06 1758.81 1006.66 1759.53 1006.66C1760.09 1006.66 1760.51 1006.8 1760.69 1006.9H1760.83L1761.01 1003.96C1761.01 1003.96 1760.67 1003.78 1760.01 1003.78C1758.95 1003.78 1758.13 1004.28 1757.57 1005.36H1757.53L1757.55 1003.96H1754.35V1013.82H1757.55ZM1766.77 1014.04C1769.83 1014.04 1771.13 1012.68 1771.45 1012.44L1770.19 1010.78C1769.63 1011.16 1768.51 1011.72 1767.23 1011.72C1765.93 1011.72 1764.85 1011.08 1764.71 1009.66H1771.73C1771.73 1009.66 1771.77 1009.08 1771.77 1008.6C1771.77 1005.72 1769.75 1003.78 1766.83 1003.78C1763.91 1003.78 1761.51 1005.64 1761.51 1008.9C1761.51 1012.16 1763.73 1014.04 1766.77 1014.04ZM1768.79 1007.84H1764.73C1764.77 1006.9 1765.45 1005.86 1766.77 1005.86C1768.11 1005.86 1768.77 1006.94 1768.79 1007.84ZM1779.41 1013.82L1780.39 1011.04H1785.31L1786.29 1013.82H1789.81L1784.61 1000H1781.25L1776.05 1013.82H1779.41ZM1784.57 1008.52H1781.13L1782.85 1003.56L1784.57 1008.52ZM1794.07 1013.82V1000.02H1790.87V1013.82H1794.07ZM1799.53 1013.82V1000.02H1796.33V1013.82H1799.53ZM1803.35 1002.82C1804.43 1002.82 1805.17 1002.16 1805.17 1001.16C1805.17 1000.18 1804.43 999.5 1803.35 999.5C1802.27 999.5 1801.53 1000.18 1801.53 1001.16C1801.53 1002.16 1802.27 1002.82 1803.35 1002.82ZM1804.95 1013.82V1003.96H1801.75V1013.82H1804.95ZM1810.01 1014.04C1811.44 1014.04 1812.23 1013.37 1812.68 1012.93L1812.83 1012.78L1812.89 1013.82H1815.95V1008.26C1815.95 1006.6 1815.53 1005.64 1814.77 1004.92C1813.99 1004.2 1812.93 1003.78 1811.09 1003.78C1809.25 1003.78 1807.71 1004.36 1806.87 1004.78L1807.71 1006.86C1808.21 1006.54 1809.47 1005.98 1810.73 1005.98C1812.01 1005.98 1812.75 1006.52 1812.75 1007.56V1007.78L1810.27 1007.88C1808.45 1007.96 1806.43 1008.7 1806.43 1010.9C1806.43 1013.1 1808.27 1014.04 1810.01 1014.04ZM1811.13 1012C1810.25 1012 1809.63 1011.54 1809.63 1010.78C1809.63 1010.04 1810.21 1009.62 1811.19 1009.58L1812.77 1009.48V1011.1C1812.57 1011.44 1811.99 1012 1811.13 1012ZM1821.13 1013.82V1008.94C1821.13 1007.52 1821.51 1006.4 1822.89 1006.4C1824.21 1006.4 1824.41 1007.38 1824.41 1008.68V1013.82H1827.61V1008C1827.61 1005.62 1826.87 1003.78 1824.01 1003.78C1822.59 1003.78 1821.69 1004.5 1821.15 1005.38H1821.11L1821.13 1003.96H1817.93V1013.82H1821.13ZM1834.29 1014.04C1836.91 1014.04 1837.95 1012.94 1838.05 1012.86L1837.29 1010.44C1837.29 1010.44 1836.29 1011.4 1834.79 1011.4C1833.29 1011.4 1832.31 1010.42 1832.31 1008.86C1832.31 1007.3 1833.39 1006.36 1834.75 1006.36C1836.13 1006.36 1837.01 1007.02 1837.29 1007.24L1837.99 1004.82C1837.99 1004.82 1836.85 1003.78 1834.33 1003.78C1831.63 1003.78 1829.09 1005.62 1829.09 1008.92C1829.09 1012.2 1831.59 1014.04 1834.29 1014.04ZM1843.99 1014.04C1847.05 1014.04 1848.35 1012.68 1848.67 1012.44L1847.41 1010.78C1846.85 1011.16 1845.73 1011.72 1844.45 1011.72C1843.15 1011.72 1842.07 1011.08 1841.93 1009.66H1848.95C1848.95 1009.66 1848.99 1009.08 1848.99 1008.6C1848.99 1005.72 1846.97 1003.78 1844.05 1003.78C1841.13 1003.78 1838.73 1005.64 1838.73 1008.9C1838.73 1012.16 1840.95 1014.04 1843.99 1014.04ZM1846.01 1007.84H1841.95C1841.99 1006.9 1842.67 1005.86 1843.99 1005.86C1845.33 1005.86 1845.99 1006.94 1846.01 1007.84Z"
+            fill="black" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M1759.9 978.5C1762.68 978.5 1764.93 980.739 1764.93 983.5C1764.93 986.261 1762.68 988.5 1759.9 988.5C1757.12 988.5 1754.86 986.261 1754.86 983.5C1754.86 980.739 1757.12 978.5 1759.9 978.5ZM1759.9 981.5C1758.78 981.5 1757.88 982.395 1757.88 983.5C1757.88 984.605 1758.78 985.5 1759.9 985.5C1761.01 985.5 1761.91 984.605 1761.91 983.5C1761.91 982.395 1761.01 981.5 1759.9 981.5ZM1754.82 956.946C1755.32 957.101 1755.8 957.303 1756.25 957.546L1755.62 960.547L1756.77 961.706L1759.75 961.064C1759.99 961.523 1760.19 962.007 1760.35 962.512L1757.79 964.181L1757.79 965.767L1764.81 969.05C1765.73 968.095 1767.02 967.5 1768.45 967.5C1771.23 967.5 1773.49 969.739 1773.49 972.5C1773.49 975.261 1771.23 977.5 1768.45 977.5C1765.67 977.5 1763.42 975.261 1763.42 972.5C1763.42 972.243 1763.44 971.991 1763.48 971.744L1756.56 968.508L1755.62 969.453L1756.25 972.455C1755.8 972.697 1755.32 972.899 1754.82 973.054L1753.16 970.478L1751.67 970.478L1749.75 974.853C1750.73 975.765 1751.34 977.062 1751.34 978.5C1751.34 981.261 1749.08 983.5 1746.3 983.5C1743.52 983.5 1741.27 981.261 1741.27 978.5C1741.27 975.739 1743.52 973.5 1746.3 973.5C1746.55 973.5 1746.79 973.517 1747.02 973.551L1748.9 969.282L1747.92 968.294L1744.94 968.935C1744.7 968.476 1744.5 967.992 1744.35 967.488L1746.9 965.819V964.181L1744.35 962.511C1744.5 962.007 1744.7 961.523 1744.94 961.064L1747.92 961.706L1749.07 960.547L1748.44 957.546C1748.89 957.303 1749.37 957.101 1749.87 956.945L1751.53 959.522H1753.16L1754.82 956.946ZM1728.01 958C1728.58 958.109 1729.13 958.257 1729.67 958.44L1729.48 961.603L1731.08 962.52L1733.74 960.776C1734.17 961.149 1734.58 961.552 1734.95 961.981L1733.2 964.623L1734.12 966.21L1737.3 966.021C1737.49 966.554 1737.64 967.103 1737.75 967.667L1734.89 969.083V970.917L1737.75 972.333C1737.64 972.897 1737.49 973.446 1737.3 973.979L1734.12 973.79L1733.2 975.377L1734.95 978.019C1734.58 978.448 1734.17 978.851 1733.74 979.224L1731.08 977.48L1729.48 978.397L1729.67 981.56C1729.13 981.743 1728.58 981.891 1728.01 982L1726.59 979.167H1724.74L1723.32 982C1722.75 981.891 1722.2 981.743 1721.66 981.56L1721.85 978.397L1720.25 977.48L1717.59 979.224C1717.16 978.851 1716.75 978.448 1716.38 978.019L1718.13 975.377L1717.21 973.79L1714.03 973.979C1713.84 973.447 1713.69 972.897 1713.58 972.334L1716.44 970.917V969.083L1713.58 967.666C1713.69 967.103 1713.84 966.553 1714.03 966.021L1717.21 966.21L1718.13 964.623L1716.38 961.981C1716.75 961.552 1717.16 961.149 1717.59 960.776L1720.25 962.52L1721.85 961.603L1721.66 958.44C1722.2 958.257 1722.75 958.109 1723.32 958L1724.74 960.833H1726.59L1728.01 958ZM1746.3 976.5C1745.19 976.5 1744.29 977.395 1744.29 978.5C1744.29 979.605 1745.19 980.5 1746.3 980.5C1747.42 980.5 1748.32 979.605 1748.32 978.5C1748.32 977.395 1747.42 976.5 1746.3 976.5ZM1724.15 944.5C1726.94 944.5 1729.19 946.739 1729.19 949.5C1729.19 949.74 1729.17 949.976 1729.14 950.207L1735.23 952.81L1735.98 952.047L1735.35 949.046C1735.8 948.803 1736.28 948.601 1736.79 948.445L1738.44 951.022H1740.07L1741.73 948.446C1742.23 948.601 1742.71 948.803 1743.17 949.046L1742.53 952.047L1743.68 953.206L1746.66 952.564C1746.9 953.023 1747.1 953.507 1747.26 954.012L1744.7 955.681V957.319L1747.26 958.988C1747.1 959.492 1746.9 959.976 1746.66 960.435L1743.68 959.794L1742.53 960.953L1743.17 963.955C1742.71 964.197 1742.23 964.399 1741.73 964.554L1740.07 961.978H1738.44L1736.79 964.554C1736.28 964.399 1735.8 964.197 1735.35 963.954L1735.98 960.953L1734.83 959.794L1731.85 960.435C1731.61 959.976 1731.41 959.492 1731.26 958.988L1733.82 957.319V955.681L1732.9 955.08L1727.83 952.915C1726.91 953.89 1725.61 954.5 1724.15 954.5C1723.45 954.5 1722.78 954.356 1722.17 954.095L1708.79 967.354C1709.28 968.121 1709.56 969.028 1709.56 970C1709.56 972.761 1707.3 975 1704.52 975C1701.74 975 1699.49 972.761 1699.49 970C1699.49 967.239 1701.74 965 1704.52 965C1705.22 965 1705.89 965.142 1706.49 965.397L1719.87 952.13C1719.4 951.366 1719.12 950.465 1719.12 949.5C1719.12 946.739 1721.37 944.5 1724.15 944.5ZM1768.45 970.5C1767.34 970.5 1766.44 971.395 1766.44 972.5C1766.44 973.605 1767.34 974.5 1768.45 974.5C1769.57 974.5 1770.47 973.605 1770.47 972.5C1770.47 971.395 1769.57 970.5 1768.45 970.5ZM1725.67 966C1723.44 966 1721.64 967.791 1721.64 970C1721.64 972.209 1723.44 974 1725.67 974C1727.89 974 1729.69 972.209 1729.69 970C1729.69 967.791 1727.89 966 1725.67 966ZM1704.52 968C1703.41 968 1702.51 968.895 1702.51 970C1702.51 971.105 1703.41 972 1704.52 972C1705.63 972 1706.54 971.105 1706.54 970C1706.54 968.895 1705.63 968 1704.52 968ZM1752.35 962.986C1751.24 962.986 1750.35 963.888 1750.35 965C1750.35 966.112 1751.24 967.014 1752.35 967.014C1753.45 967.014 1754.35 966.112 1754.35 965C1754.35 963.888 1753.45 962.986 1752.35 962.986ZM1739.26 954.486C1738.15 954.486 1737.26 955.388 1737.26 956.5C1737.26 957.612 1738.15 958.514 1739.26 958.514C1740.36 958.514 1741.26 957.612 1741.26 956.5C1741.26 955.388 1740.36 954.486 1739.26 954.486ZM1754.36 945C1757.14 945 1759.39 947.239 1759.39 950C1759.39 952.761 1757.14 955 1754.36 955C1751.58 955 1749.33 952.761 1749.33 950C1749.33 947.239 1751.58 945 1754.36 945ZM1754.36 948C1753.25 948 1752.35 948.895 1752.35 950C1752.35 951.105 1753.25 952 1754.36 952C1755.47 952 1756.37 951.105 1756.37 950C1756.37 948.895 1755.47 948 1754.36 948ZM1724.15 947.5C1723.04 947.5 1722.14 948.395 1722.14 949.5C1722.14 950.605 1723.04 951.5 1724.15 951.5C1725.27 951.5 1726.17 950.605 1726.17 949.5C1726.17 948.395 1725.27 947.5 1724.15 947.5Z"
+            fill="black" />
+        </g>
+        <line x1="315.324" y1="267" x2="128.605" y2="267" stroke="#CBCBCB" stroke-width="2" />
+        <line x1="315.324" y1="590" x2="128.605" y2="590" stroke="#CBCBCB" stroke-width="2" />
+        <line x1="315.324" y1="877" x2="128.605" y2="877" stroke="#CBCBCB" stroke-width="2" />
+      </svg>
+    </div>
+  </section>
+  <script src="stack.js"></script>
+</body>
+
+</html>

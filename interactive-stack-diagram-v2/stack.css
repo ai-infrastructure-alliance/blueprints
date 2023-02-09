@@ -1,0 +1,78 @@
+.aiia-chart {
+  max-width: 1800px;
+  min-width: 900px;
+
+  text {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+:root {
+  --white: #fff;
+}
+
+nav {
+  display: flex;
+}
+
+.option {
+  display: inline-block;
+  padding: 10px;
+  margin: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option .check {
+  display: inline-block;
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  margin-right: 10px;
+  pointer-events: none;
+}
+
+.option .logo {
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.option.active .check {
+  background: currentColor;
+  display: grid;
+  place-content: center;
+
+  &::before {
+    content: "";
+    color: #000;
+    position: relative;
+    height: 6px;
+    width: 12px;
+    transform: rotate(-45deg);
+    transform-origin: 5px 2px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+  }
+}
+
+.wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  border: 1px solid;
+}
